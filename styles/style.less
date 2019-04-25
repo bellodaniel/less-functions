@@ -1,0 +1,15 @@
+@import "_vars";
+@import "_mixins";
+
+h1{
+  color: @main_color;
+  .transition();
+  .box-shadow();
+  &:hover{
+    color: @paragraph_color;
+  }
+}
+h2{
+  color: @paragraph_color;
+  &:extend(h1);
+}
