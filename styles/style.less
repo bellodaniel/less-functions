@@ -1,6 +1,9 @@
 @import "_vars";
 @import "_mixins";
-
+body{
+  background-image: svg-gradient(to bottom, #eee, shade(#eee));
+  height: 100vh;
+}
 h1{
   color: @main_color;
   .transition();
@@ -11,5 +14,6 @@ h1{
 }
 h2{
   color: @paragraph_color;
+  .bordered();
   &:extend(h1);
 }
